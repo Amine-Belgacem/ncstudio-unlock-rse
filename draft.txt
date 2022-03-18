@@ -1,0 +1,498 @@
+Hash: C24A30D0526AA594670AF321E16240A5
+CRC32: 1DC14E05
+
+Entry Point: 00406547
+
+Remember GetSystemTimeAsFileTime
+
+004063C1 call  _WinMain@16  ; WinMain(x,x,x,x)
+
+NcLib.CalculateParamFileCRC32
+
+CPU Disasm
+Address   Hex dump          Command                                  Comments
+003D1163   $-/E9 98170000   JMP 003D2900
+
+003D2900
+
+NcLib
+
+NcLib.FileCRC32
+
+Follow expression
+
+MD5 there
+
+CheckCTSIntegrity
+Down o .rdata:00408E28 dd offset ?CheckCTSIntegrity@CNcAppBase@@MAE_NXZ; CNcAppBase::CheckCTSIntegrity(void)
+
+
+.rdata:00408E20                 dd offset ?AntiDebug@CNcAppBase@@MAE_NXZ ; CNcAppBase::AntiDebug(void)
+.rdata:00408E24                 dd offset ?CheckIntegrity@CNcAppBase@@MAE_NXZ ; CNcAppBase::CheckIntegrity(void)
+.rdata:00408E28                 dd offset ?CheckCTSIntegrity@CNcAppBase@@MAE_NXZ ; CNcAppBase::CheckCTSIntegrity(void)
+
+GetSafeOwner_
+
+sub_403100
+
+Antidebug
+
+IN Ncuibase
+
+Names in NcuiBase, item 837
+  Address = 00722D01
+  Section = .text
+  Type = Export
+  Ordinal = #4
+  Name = ??0CExpireChecker@@QAE@XZ
+  Comments =
+
+CRuntimeClass const CExpireChecker::classCExpireChecker 1003AE54 940
+CRuntimeClass const CPcimc6LegalityChecker::classCPcimc6LegalityChecker 1003FC54 968
+
+
+CNcAppBase::CheckCTSIntegrity(void) 10002D79 150
+
+CNcAppBase::CheckIntegrity(void) 10002266 152
+
+GetExpireChecker(void) 10002A45 190
+CExpireChecker::OnEvery1Hour(void) 10001546 489
+CPcimc6LegalityChecker::OnEvery1Second(void) 100013F2 496
+
+In NcLib
+
+Name                                             Address  Ordinal
+----                                             -------  -------
+CalculateParamFileCRC32(CFile *)                 10001163 46     
+CParameterFile::CalculateParamFileCRC32(CFile *) 10001203 47     
+FileCRC32(char const *,ulong *)                  100014CE 61     
+MemCRC32(void const *,ulong)                     100012BC 141    
+
+
+In Ncuibase
+
+Address  Ordinal Name                                                                                                            Library
+-------  ------- ----                                                                                                            -------
+1005EFAC         ?SignatureByMD5@@YA_NPBDPATMD5_SIGNATURE@@@Z                                                                    NcLib  
+1005EFB0         ?Format_MD5_SIGNATURE@@YAXAAV?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@PATMD5_SIGNATURE@@@Z NcLib  
+1005F028         ?SignatureByMD5@@YAXPAEIPATMD5_SIGNATURE@@@Z                                                                    NcLib  
+
+Name                                                                    Address  Ordinal
+----                                                                    -------  -------
+CExpireChecker::CExpireChecker(void)                                    10002D01 4      
+CPcimc6LegalityChecker::CPcimc6LegalityChecker(void)                    100025D1 36     
+CExpireChecker::~CExpireChecker(void)                                   100027F7 48     
+CPcimc6LegalityChecker::~CPcimc6LegalityChecker(void)                   10001A37 79     
+const CExpireChecker::`vftable'                                         1003AEA4 92     
+const CPcimc6LegalityChecker::`vftable'                                 1003FCA4 123    
+CNcShell::ArpCheck(void)                                                100021CB 141    
+CNcCoorTarget::CanAutoMachiningByCheckingBkref(void)                    1000254F 144    
+CUpgradeBoardTarget::CheckAndUpgrade(void)                              1000295A 149    
+CNcAppBase::CheckCTSIntegrity(void)                                     10002D79 150    
+CPcimc6LegalityChecker::CheckHardwareType(void)                         10002C3E 151    
+CNcAppBase::CheckIntegrity(void)                                        10002266 152    
+GetExpireChecker(void)                                                  10002A45 190    
+CExpireChecker::GetMessageMap(void)                                     10002243 204    
+CPcimc6LegalityChecker::GetMessageMap(void)                             100021B7 229    
+GetPcimc6LegalityChecker(void)                                          1000232E 265    
+CExpireChecker::GetRemainedTime(void)                                   1000128F 268    
+CExpireChecker::GetRuntimeClass(void)                                   100014BF 272    
+CPcimc6LegalityChecker::GetRuntimeClass(void)                           10001640 300    
+CExpireChecker::GetThisClass(void)                                      100012A3 314    
+CPcimc6LegalityChecker::GetThisClass(void)                              100023BF 342    
+CExpireChecker::GetThisMessageMap(void)                                 10002D6A 352    
+CPcimc6LegalityChecker::GetThisMessageMap(void)                         100011EF 377    
+CExpireChecker::OnEvery1Hour(void)                                      10001546 489    
+CPcimc6LegalityChecker::OnEvery1Second(void)                            100013F2 496    
+CMsgCmdUI::SetCheck(int)                                                1000279D 832    
+CPcimc6LegalityChecker::TestNormalWord(void)                            10001591 869    
+CExpireChecker::UpdateState(void)                                       10002EA5 886    
+CPcimc6LegalityChecker::UpdateState(void)                               10001EF6 887    
+CPcimc6LegalityChecker::Verify(void)                                    100019F6 888    
+CExpireChecker::_GetBaseClass(void)                                     100018D9 893    
+CPcimc6LegalityChecker::_GetBaseClass(void)                             10002040 921    
+CRuntimeClass const CExpireChecker::classCExpireChecker                 1003AE54 940    
+CRuntimeClass const CPcimc6LegalityChecker::classCPcimc6LegalityChecker 1003FC54 968    
+CExpireChecker * CExpireChecker::m_pTarget                              1005BE40 985    
+CPcimc6LegalityChecker * CPcimc6LegalityChecker::m_pTarget              1005C72C 1006   
+
+
+Names in NcuiBase, item 75
+  Address = 007212D5
+  Section = .text
+  Type = Export
+  Ordinal = #401
+  Name = ?InitInstance@CNcAppBase@@UAEHXZ
+  Comments =
+
+CPU Disasm
+Address   Hex dump          Command                                                                                            Comments
+00406BD6   .- FF25 F4844000 JMP DWORD PTR DS:[<&NcuiBase.?OnEvery1Second@CNcTarget@@MAEXXZ>]
+00406BDC   .- FF25 F8844000 JMP DWORD PTR DS:[<&NcuiBase.?OnEvery1Minute@CNcTarget@@MAEXXZ>]
+00406BE2   .- FF25 FC844000 JMP DWORD PTR DS:[<&NcuiBase.?OnEvery1Hour@CNcTarget@@MAEXXZ>]
+
+
+Lines to patch
+
+CPU Disasm
+Address   Hex dump          Command                                                                                            Comments
+006808FB  |>  FF15 9CEF6C00 CALL DWORD PTR DS:[<&NcLib.?IsHomeComputer@@YA_NXZ>]
+00680901  |.  84C0          TEST AL,AL
+00680903      75 14         JNZ SHORT 00680919
+
+sub_4026C0
+
+
+Name                                                    Address  Ordinal
+----                                                    -------  -------
+CExpireChecker::CExpireChecker(void)                    10002D01 4      
+CExpireChecker::~CExpireChecker(void)                   100027F7 48     
+const CExpireChecker::`vftable'                         1003AEA4 92     
+GetExpireChecker(void)                                  10002A45 190    
+CExpireChecker::GetMessageMap(void)                     10002243 204    
+CExpireChecker::GetRemainedTime(void)                   1000128F 268    
+CExpireChecker::GetRuntimeClass(void)                   100014BF 272    
+CExpireChecker::GetThisClass(void)                      100012A3 314    
+CExpireChecker::GetThisMessageMap(void)                 10002D6A 352    
+CExpireChecker::OnEvery1Hour(void)                      10001546 489    
+CExpireChecker::UpdateState(void)                       10002EA5 886    
+CExpireChecker::_GetBaseClass(void)                     100018D9 893    
+CRuntimeClass const CExpireChecker::classCExpireChecker 1003AE54 940    
+CExpireChecker * CExpireChecker::m_pTarget              1005BE40 985    
+
+
+
+0075AE54 .rdata   Export    #940    ?classCExpireChecker@CExpireChecker@@2UCRuntimeClass@@B
+0075AEA4 .rdata   Export    #92     ??_7CExpireChecker@@6B@
+0077BE40 .data    Export    #985    ?m_pTarget@CExpireChecker@@0PAV1@A
+ECX+34 how many hours already - ADD DWORD PTR DS:[ECX+34],0  
+ECX+2c  Remained Time
+m_pTarget  expired or not
+ESI+31 26
+
+MOV DWORD PTR SS:[ESP+18],EBX
+
+CPU Disasm
+Address   Hex dump            Command                                                                                             Comments
+00733209  |.  8935 40BE7700   MOV DWORD PTR DS:[?m_pTarget@CExpireChecker@@0PAV1@A],EBX
+
+
+89 1d 40 be 77 00
+
+
+CPU Disasm
+Address   Hex dump            Command                                                                                             Comments
+00733225  |.  8A88 14010000   MOV CL,BYTE PTR DS:[EAX+114]
+0073322B  |.  884E 31         MOV BYTE PTR DS:[ESI+31],CL
+0073322E  |.  66:8B90 1601000 MOV DX,WORD PTR DS:[EAX+116]
+00733235  |.  66:8956 32      MOV WORD PTR DS:[ESI+32],DX
+00733239  |.  895E 28         MOV DWORD PTR DS:[ESI+28],EBX
+0073323C  |.  895E 2C         MOV DWORD PTR DS:[ESI+2C],EBX                                                                       ; ---------> Remained Time
+
+
+00755D2A
+
+00755D57
+
+
+0073323F
+
+
+Set expire everyhour to 0
+change esi to ebx in expirecheck
+added a code cave
+totally removed update expire check content
+
+
+
+CPU Disasm
+Address   Hex dump          Command                                                                        Comments
+0072F1AA  |.  64:A1 0000000 MOV EAX,DWORD PTR FS:[0]
+
+
+Try more with expire checker
+
+NcLib.?ShowMessage
+
+NcLib.?GetCs
+ShowTipAtStartup@CNcAppBase@@IAEXXZ
+
+
+1
+1cExpireChecker
+007532B0  />  56            PUSH ESI
+007532B1  |.  8BF1          MOV ESI,ECX
+007532B3  |.  E8 3FF5FEFF   CALL ??1CExpireChecker@@UAE@XZ                                                         
+007532B8  |.  F64424 08 01  TEST BYTE PTR SS:[ESP+8],01
+007532BD  |.- 74 09         JZ SHORT 007532C8           --------------> to jmp
+007532BF  |.  56            PUSH ESI                                                                              
+007532C0  |.  E8 3F880100   CALL <JMP.&MFC80.#764>                                                                    
+007532C5  |.  83C4 04       ADD ESP,4
+007532C8  |>  8BC6          MOV EAX,ESI
+007532CA  |.  5E            POP ESI
+
+changed get expire checker to 0
+
+legality
+jmp 007331D0
+
+
+
+CPU Disasm
+Address   Hex dump          Command                                                                                          Comments
+00733225      8A88 14010000 MOV CL,BYTE PTR DS:[EAX+114]
+0073322B      884E 31       MOV BYTE PTR DS:[ESI+31],CL
+0073322E      66:8B90 16010 MOV DX,WORD PTR DS:[EAX+116]
+
+
+0073322B
+
+CPU Disasm
+Address   Hex dump          Command                                                                                          Comments
+00755D5B      C746 28 01010 MOV DWORD PTR DS:[ESI+28],101
+00755D62      C746 2C 01010 MOV DWORD PTR DS:[ESI+2C],101
+00755D69    ^ E9 D1D4FDFF   JMP 0073323F
+ 
+
+GetTickCount
+Retrieves the number of milliseconds that have elapsed since the system was started, up to 49.7 days.
+
+
+injectdll
+0521C0C0
+
+pplay with update checker
+
+change getticketcount
+look for time refrences
+
+how is m_target modified on updatestate ?
+legality
+
+
+1b = 27 exist in esi+28
+copy files from machine back to pc
+
+check nstudio signature from firstrun
+	add byte ptr [eax], al
+
+timegettime
+
+timercounterinterval
+
+
+getNcTarget know what is it
+
+ShowTipAtStartup
+
+7e fd f0 00
+
+
+FF 15 E0 EF 78 00
+
+589 = 4d 02 = 24d
+
+
+
+NcCore
+CPU Disasm
+Address   Hex dump                              Command                                                                     Comments
+0026DDD9  |.  8B15 608C2900                     MOV EDX,DWORD PTR DS:[298C60]                                               ; ------------> Software will expire after %d days
+0026DDDF  |.  50                                PUSH EAX
+0026DDE0  |.  52                                PUSH EDX
+0026DDE1  |.  FF15 2CC72900                     CALL DWORD PTR DS:[<&NcLib.?GetCs@@YAPBDH@Z>]
+0026DDE7  |.  83C4 04                           ADD ESP,4
+0026DDEA  |.  50                                PUSH EAX
+0026DDEB  |.  8D4424 2C                         LEA EAX,[ESP+2C]
+0026DDEF  |.  50                                PUSH EAX
+0026DDF0  |.- EB 2C                             JMP SHORT 0026DE1E
+0026DDF2  |>  0FB786 2E420700                   MOVZX EAX,WORD PTR DS:[ESI+7422E]
+0026DDF9  |.  66:3D FFFF                        CMP AX,0FFFF
+0026DDFD  |.- 74 28                             JE SHORT 0026DE27
+0026DDFF  |.  0FB7C0                            MOVZX EAX,AX
+0026DE02  |.  83F8 30                           CMP EAX,30
+0026DE05  |.- 7D 20                             JGE SHORT 0026DE27
+0026DE07  |.  8B0D 5C8C2900                     MOV ECX,DWORD PTR DS:[298C5C]                                               ; ------------> Software will expire after %d hours
+0026DE0D  |.  50                                PUSH EAX
+0026DE0E  |.  51                                PUSH ECX
+0026DE0F  |.  FF15 2CC72900                     CALL DWORD PTR DS:[<&NcLib.?GetCs@@YAPBDH@Z>]
+0026DE15  |.  83C4 04                           ADD ESP,4
+
+
+
+
+EIP is at 002c100f after Showing returning to machine
+
+origin set to ---------> Get Message String From File --> jump or call to selection
+
+
+97 ncstudio
+
+7f ncstudio
+
+CPU Disasm
+Address   Hex dump          Command                                                                                   Comments
+00754C6B  |.  FF15 E0EF7800 CALL DWORD PTR DS:[001E14D8]
+
+FF 15 E0 EF 78 00
+
+589 = 4d 02 = 24d
+
+
+54 02
+
+26875b
+
+
+FF 15 34 C7 29 00
+
+00298c58
+
+eip at 2c100f
+
+
+Searched for NcLib getcs
+
+CPU Disasm
+Address                     Hex dump                               Command                                                                      Comments
+00740A6D                    |.  68 00A57600                        PUSH OFFSET 0076A500                                                         ; /Name = "zzk_NCSTUDIO_7000{F87C04A0-D4EA-11d4-88B8-0050FC09F3B0}"
+
+CPU Disasm
+Address                               Hex dump                               Command                                                                      Comments
+00737A0D                              |.  8A89 0C737600                      |MOV CL,BYTE PTR DS:[ECX+76730C]                                             ; ASCII "TWXY89ABCD4EFGHJK67MNPQ35RS"
+
+
+
+F87C04A0-D4EA-11d4-
+
+
+1234567891324657981
+
+0234567891324657981
+
+
+1234-6789-324-57981
+
+abcd-efgh-ijk-lmnop
+
+
+
+ 0018F6B4
+0018F6A1
+
+405
+
+CPU Stack
+Address   Value      UNIC>Comments
+0018F64C  |0018F65C  ?   ; ASCII "TTTTTTTTTTTTTT$"
+
+------------------------------------------------------------
+
+ba021849 837de800        cmp     dword ptr [ebp-18h],0
+ba02184d 7428            je      ba021877
+
+ba02184f 8b4dfc          mov     ecx,dword ptr [ebp-4]
+ba021852 c70104000000    mov     dword ptr [ecx],4
+ba021858 8b55fc          mov     edx,dword ptr [ebp-4]
+ba02185b 8b45e8          mov     eax,dword ptr [ebp-18h]
+ba02185e 894204          mov     dword ptr [edx+4],eax
+ba021861 8b4df0          mov     ecx,dword ptr [ebp-10h]
+ba021864 894de0          mov     dword ptr [ebp-20h],ecx
+ba021867 8d4def          lea     ecx,[ebp-11h]
+ba02186a e87177ffff      call    ba018fe0
+ba02186f 8b45e0          mov     eax,dword ptr [ebp-20h]
+ba021872 e9ee010000      jmp     ba021a65
+
+ba021877 8b4dcc          mov     ecx,dword ptr [ebp-34h]
+ba02187a e8211f0000      call    ba0237a0
+ba02187f 0fb6d0          movzx   edx,al
+ba021882 85d2            test    edx,edx
+ba021884 741f            je      ba0218a5
+
+ba021886 8b45fc          mov     eax,dword ptr [ebp-4]
+ba021889 c70006000000    mov     dword ptr [eax],6
+ba02188f 8b4df0          mov     ecx,dword ptr [ebp-10h]
+ba021892 894ddc          mov     dword ptr [ebp-24h],ecx
+ba021895 8d4def          lea     ecx,[ebp-11h]
+ba021898 e84377ffff      call    ba018fe0
+ba02189d 8b45dc          mov     eax,dword ptr [ebp-24h]
+ba0218a0 e9c0010000      jmp     ba021a65
+
+ba0218a5 8b55f8          mov     edx,dword ptr [ebp-8]
+ba0218a8 52              push    edx
+ba0218a9 8b4dcc          mov     ecx,dword ptr [ebp-34h]
+ba0218ac 81c1f0430a00    add     ecx,0A43F0h
+ba0218b2 8b45cc          mov     eax,dword ptr [ebp-34h]
+ba0218b5 8b90f0430a00    mov     edx,dword ptr [eax+0A43F0h]
+ba0218bb 8b4204          mov     eax,dword ptr [edx+4]
+ba0218be ffd0            call    eax
+ba0218c0 8b4dcc          mov     ecx,dword ptr [ebp-34h]
+ba0218c3 e8d877ffff      call    ba0190a0
+ba0218c8 8b4dcc          mov     ecx,dword ptr [ebp-34h]
+ba0218cb 88811c440a00    mov     byte ptr [ecx+0A441Ch],al
+ba0218d1 8b4dcc          mov     ecx,dword ptr [ebp-34h]
+ba0218d4 e897010000      call    ba021a70
+ba0218d9 8945e8          mov     dword ptr [ebp-18h],eax
+ba0218dc 837de800        cmp     dword ptr [ebp-18h],0
+ba0218e0 7428            je      ba02190a
+
+ba0218e2 8b55fc          mov     edx,dword ptr [ebp-4]
+ba0218e5 c70204000000    mov     dword ptr [edx],4
+ba0218eb 8b45fc          mov     eax,dword ptr [ebp-4]
+ba0218ee 8b4de8          mov     ecx,dword ptr [ebp-18h]
+ba0218f1 894804          mov     dword ptr [eax+4],ecx
+ba0218f4 8b55f0          mov     edx,dword ptr [ebp-10h]
+ba0218f7 8955d8          mov     dword ptr [ebp-28h],edx
+ba0218fa 8d4def          lea     ecx,[ebp-11h]
+ba0218fd e8de76ffff      call    ba018fe0
+ba021902 8b45d8          mov     eax,dword ptr [ebp-28h]
+ba021905 e95b010000      jmp     ba021a65
+
+ba02190a 8b45cc          mov     eax,dword ptr [ebp-34h]
+ba02190d 8b8824ce7400    mov     ecx,dword ptr [eax+74CE24h]
+ba021913 51              push    ecx
+ba021914 ff159c7001ba    call    dword ptr ds:[0BA01709Ch]
+ba02191a 8b55cc          mov     edx,dword ptr [ebp-34h]
+ba02191d 8b8224ce7400    mov     eax,dword ptr [edx+74CE24h]
+ba021923 0fbf4806        movsx   ecx,word ptr [eax+6]
+ba021927 81e100200000    and     ecx,2000h
+ba02192d 66894df4        mov     word ptr [ebp-0Ch],cx
+ba021931 0fbf55f4        movsx   edx,word ptr [ebp-0Ch]
+ba021935 85d2            test    edx,edx
+ba021937 7520            jne     ba021959
+
+ba021939 8b45cc          mov     eax,dword ptr [ebp-34h]
+ba02193c 8b8824ce7400    mov     ecx,dword ptr [eax+74CE24h]
+ba021942 0fbf5106        movsx   edx,word ptr [ecx+6]
+ba021946 81ca00200000    or      edx,2000h
+ba02194c 8b45cc          mov     eax,dword ptr [ebp-34h]
+ba02194f 8b8824ce7400    mov     ecx,dword ptr [eax+74CE24h]
+ba021955 66895106        mov     word ptr [ecx+6],dx
+
+ba021959 6a01            push    1
+ba02195b 8b55cc          mov     edx,dword ptr [ebp-34h]
+ba02195e 8b8224ce7400    mov     eax,dword ptr [edx+74CE24h]
+ba021964 50              push    eax
+ba021965 ff15987001ba    call    dword ptr ds:[0BA017098h]
+ba02196b 8b4dcc          mov     ecx,dword ptr [ebp-34h]
+ba02196e 898128ce7400    mov     dword ptr [ecx+74CE28h],eax
+ba021974 0fbf55f4        movsx   edx,word ptr [ebp-0Ch]
+ba021978 85d2            test    edx,edx
+ba02197a 7520            jne     ba02199c
+
+-----------------------------------------------------------
+
+ba021877 8b4dcc          mov     ecx,dword ptr [ebp-34h]
+ba02187a e8211f0000      call    ba0237a0
+ba02187f 0fb6d0          movzx   edx,al
+ba021882 85d2            test    edx,edx
+ba021884 741f            je      ba0218a5
+
+ba021886 8b45fc          mov     eax,dword ptr [ebp-4]
+ba021889 c70006000000    mov     dword ptr [eax],6
+ba02188f 8b4df0          mov     ecx,dword ptr [ebp-10h]
+ba021892 894ddc          mov     dword ptr [ebp-24h],ecx
+ba021895 8d4def          lea     ecx,[ebp-11h]
+ba021898 e84377ffff      call    ba018fe0
+ba02189d 8b45dc          mov     eax,dword ptr [ebp-24h]
+ba0218a0 e9c0010000      jmp     ba021a65

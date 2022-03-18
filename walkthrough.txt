@@ -1,0 +1,59 @@
+
+ Reversing walkthrough :
+
+	- Explored machine's OS capabilities and permissions
+	- Explored installed machine's hardware
+	- Changed System time
+	- Blocked application's time 
+	- Launched "NKStudio.exe" with custom date
+	- Searched for serial key related information in application files and registery
+	- Searched for date structures related informations in registery and in application files
+	- Monitored registery changes while executing "NKStudio.exe"
+	- Monitored file changes in application directory
+	- Tried understanding timing system used with provoking system shutdown
+	- Tried resetting windows to a previously created restore point
+	- Tried virtualizing the software execution
+	- Backed up disk partitions
+	- Fully exported the software and it's drivers
+	- Simulated the machine's environment on VMware and installed the software
+	- Tried installing Windows XP SP2 on the machine
+	- Tried booting using Windows XP Live CD and Minimized XP versions i.e BartPE
+	- Tried rebuilding Windows XP SP2 Embedded from disk backups
+	- Tried to debug on the machine
+	- Disassembled "NKStudio.exe" and studied it's loaded libraries on VMware
+	- Studied imported and exported API calls per library
+	- Followed program execution process
+	- Tried to discover security measures applied to the software
+	- Discovered the use of security cookie
+	- Removed digital signatures
+	- Bypassed isDebuggerPresent Anti debugging system
+	- Applied test modification to the executable file
+	- Searched for dll/exe files integrity check routines
+	- Bypassed integrity checks
+	- Searched for expiration check routines
+	- Tried alternating expiration check routines
+	- Studied remaining time calculation system
+	- Blocked GetTickCount and time related API Calls
+	- Removed expiration check routine calls from program startup
+	- Bypassed register dialog
+	- Searched for serial key generation algorithm and analyzed it
+	- Generated valid serial keys
+	- Tried to understand the cause of the inability to register the adapter
+	- Hooked deviceIOControl API call
+	- Discovered the use of drivers for serial key validation
+	- Searched for the handle responsible of IOControle code transmission
+	- Dumped responsible file structure
+	- Looked for the device responsible of the communication
+	- Changed to kernel mode debugging
+	- Stepped the kernel and analyzed the driver load process
+	- Analyzed the file structure
+	- Looked for the attached device
+	- Dumped the attached device structure and analyzed the driver object structure
+	- Discovered that "Wh300a.sys" is the driver responsible of analyzing IOControle codes
+	- Disassembled the driver file and studied its routines and API calls
+	- Found expiration check routine
+	- Patched expire check routine 
+	- Injected the new "Wh300a.sys" driver file to the machine
+	- Recalculated PE Checksum of the new driver file
+	- Re injected the driver file
+	- Tested and Working.
