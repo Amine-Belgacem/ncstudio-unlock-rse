@@ -1,4 +1,4 @@
-# Ncstudio-RSE
+# Ncstudio-unlock-rse
 NcStudio 7.0 for NK300 CNC Machine crack. This will totally unlock NcStudio resulting in a fully functional software without expiration. 
 
 ## Walkthrough
