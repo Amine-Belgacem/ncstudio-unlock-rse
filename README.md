@@ -2,7 +2,7 @@
 NcStudio 7.0 for NK300 CNC Machine crack. This will totally unlock NcStudio resulting in a fully functional software without expiration. 
 
 ## Walkthrough
-Reversing walkthrough :
+Reversing process walkthrough:
 
 	- Explored machine's OS capabilities and permissions
 	- Explored installed machine's hardware
