@@ -73,8 +73,6 @@ Reversing process walkthrough:
 
 What initially appeared to be an application-level expiration mechanism turned out to involve multiple layers of protection and validation.
 
-The investigation progressed from `NKStudio.exe` and its timing and registration mechanisms to API-level tracing, integrity checks, IOCTL communication, device analysis, and finally kernel-mode debugging of the driver used by the NK300 CNC router machine.
-
 The expiration mechanism was ultimately located inside `Wh300a.sys`. After identifying and modifying the relevant expiration-check routine, the modified driver was deployed and tested on the target environment.
 
 The final result was a functioning NcStudio 7.0 installation without the original expiration restriction.
